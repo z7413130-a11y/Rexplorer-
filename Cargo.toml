@@ -1,0 +1,29 @@
+[package]
+name = "rust-explorer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.27"
+egui = "0.27"
+egui_extras = "0.27"
+dirs = "5.0"
+chrono = "0.4"
+arboard = "3.4"
+rfd = "0.14"
+open = "5.0"
+egui-phosphor = "0.5.0"
+sysinfo = "0.30"
+image = "0.24"
+walkdir = "2.5"
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_Foundation",
+    "Win32_Storage_FileSystem",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_Input_KeyboardAndMouse"
+]
